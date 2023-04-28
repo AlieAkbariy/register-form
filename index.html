@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="center-align">Registration Form</h2>
+      <form>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">person</i>
+            <input id="username" type="text">
+            <label for="username">Username</label>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">phone</i>
+              <input id="phone" type="text">
+              <label for="phone">Phone</label>
+            </div>
+          </div>
+
+          <label for="emailValidationFalse">
+            <input type="checkbox" id="emailValidationFalse" name="options" value="validate"> 
+            <span class="checkmark"></span>With out validation
+          </label>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input id="email" type="email">
+            <label for="email">Email</label>
+          </div>
+        </div>
+
+        <label for="passwordValidationFalse">
+          <input type="checkbox" id="passwordValidationFalse" name="options1" value="notValidate"> 
+          <span class="checkmark"></span>With out validation
+        </label>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">lock</i>
+            <input id="password" type="password">
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">lock</i>
+            <input id="confirm_password" type="password">
+            <label for="confirm_password">Confirm Password</label>
+          </div>
+        </div>
+        <div class="row center-align">
+          <button type="submit", id="submit" class="btn waves-effect waves-light" disabled>Register</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
